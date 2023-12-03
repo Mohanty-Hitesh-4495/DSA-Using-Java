@@ -11,9 +11,9 @@ import java.util.Arrays;
 public class Flipping_image {
     public static void main(String[] args) {
         int[][] image = {
-                {1,1,0},
                 {1,0,1},
-                {0,0,0}
+                {1,1,1},
+                {1,0,0}
         };
         System.out.println("INPUT");
         for (int i=0;i<image.length;i++){
@@ -26,9 +26,8 @@ public class Flipping_image {
         }
     }
     public static int[][] flipAndInvertImage(int[][] image) {
-        int len=image.length;
-        for(int i=0;i<len;i++){
-            int start=0,end=len-1;
+        for(int i=0;i<image.length;i++){
+            int start=0,end=image[i].length-1;
             while(start<=end){
                 int temp=(image[i][start]+1)%2;
                 image[i][start]=(image[i][end]+1)%2;
