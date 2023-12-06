@@ -1,6 +1,5 @@
-
-    public class StringBufferExample {
-        public static void main(String[] args)
+public class StringBufferExample {
+    public static void main(String[] args)
         {
             StringBuilder sb = new StringBuilder("hitesh ");
             sb.append("Hello");

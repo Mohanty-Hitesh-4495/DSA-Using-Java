@@ -17,7 +17,7 @@ public class BubbleSort {
             }
         }
     }
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int size;
         System.out.print("ENTER THE SIZE OF ARRAY : ");
