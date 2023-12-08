@@ -1,12 +1,12 @@
 package Binary_Search;
+//  162. Find Peak Element
+//  URL=https://leetcode.com/problems/find-peak-element/
 //  852. Peak Index in a Mountain Basic_Fundamentals.Array
 //  URL=https://leetcode.com/problems/peak-index-in-a-mountain-array/
 /*  Example:
     Input: arr = [0,10,5,2]
     Output: 1
  */
-//  162. Find Peak Element
-//  URL=https://leetcode.com/problems/find-peak-element/
 public class Peak_of_MountainArray {
     public static void main(String[] args) {
         int[] arr = {0,10,15,20,25,13,10,5,2};

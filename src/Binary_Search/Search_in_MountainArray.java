@@ -10,7 +10,7 @@ package Binary_Search;
 /*
     1095. Find in Mountain Basic_Fundamentals.Array
     https://leetcode.com/problems/find-in-mountain-array/
- */
+*/
 
 public class Search_in_MountainArray{
     public static void main(String[] args) {

@@ -13,11 +13,10 @@ public class Remove_Duplicate {
         int[] nums = {0,0,1,1,1,1,1,1,1,2,2,3,3,3,3,3,3,3,4,4,4,5,5,5,5,6,6,6,6,7,7,7};
         System.out.println("INPUT = "+ Arrays.toString(nums));
         int k=removeDuplicates(nums);
-        int size=k;
         System.out.print("OUTPUT = [");
-        for (int i=0;i<size;i++){
+        for (int i = 0; i< k; i++){
             System.out.print(nums[i]);
-            if (i<size-1)
+            if (i< k -1)
                 System.out.print(",");
         }
         System.out.print("]");
