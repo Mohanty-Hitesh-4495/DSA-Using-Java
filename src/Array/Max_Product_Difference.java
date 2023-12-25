@@ -19,6 +19,7 @@ public class Max_Product_Difference {
 
     public static int maxProductDifference(int[] nums) {
          // First Approach - Moye moye :(
+
          /*     int max=Integer.MIN_VALUE,min=Integer.MAX_VALUE;
                 for(int i=0;i<nums.length;i++){
                     for(int j=0;j<nums.length;j++){
@@ -35,6 +36,7 @@ public class Max_Product_Difference {
           */
 
         // Second Approach - :)
+
         Arrays.sort(nums);
         return (nums[nums.length-1]*nums[nums.length-2] - nums[0]*nums[1]);
     }
