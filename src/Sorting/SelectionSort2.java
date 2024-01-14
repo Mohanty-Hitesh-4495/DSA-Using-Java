@@ -3,26 +3,29 @@ package Sorting;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class SelectionSort01 {
-    private static void selectionSort(int[] arr){
+public class SelectionSort2 {
+
+    static void selectionSort(int[] arr){
         for(int i=0;i<arr.length;i++){
-            int minIndex = maxIndex(arr,i,arr.length);
-            swap(arr,i,minIndex);
+            int lastIndex = arr.length-i-1;
+            int maxIndex =getMaxIndex(arr,lastIndex);
+            swap(arr,maxIndex,lastIndex);
         }
     }
-    private static void swap(int[] arr,int min,int max){
-        int temp = arr[min];
-        arr[min]=arr[max];
-        arr[max]=temp;
+    static void swap(int[] arr, int maxIndex, int lastIndex) {
+        int temp = arr[maxIndex];
+        arr[maxIndex] = arr[lastIndex];
+        arr[lastIndex] = temp;
     }
-    private static int maxIndex(int[] arr, int firstIndex, int length) {
-        int min=firstIndex;
-        for(int i=firstIndex;i<length;i++){
-            if(arr[i]<arr[min])
-                min=i;
+    static int getMaxIndex(int[] arr, int last) {
+        int max= 0;
+        for(int i = 0; i<=last; i++){
+            if(arr[max]<arr[i])
+                max=i;
         }
-        return min;
+        return max;
     }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter size of array : ");
@@ -35,6 +38,6 @@ public class SelectionSort01 {
         System.out.println("Before Sorting : "+ Arrays.toString(arr));
         selectionSort(arr);
         System.out.println("After Sorting : "+Arrays.toString(arr));
+        sc.close();
     }
-
 }
