@@ -1,4 +1,4 @@
-package Binary_Search;
+package Binary_Search.Questions;
 //  Find position of an element in a sorted array of infinite numbers
 //  https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/
 public class Infinite_Array {

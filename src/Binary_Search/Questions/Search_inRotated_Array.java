@@ -1,10 +1,11 @@
+package Binary_Search.Questions;
+
 //  33. Search in Rotated Sorted Basic_Fundamentals.Array
 //  URL=https://leetcode.com/problems/search-in-rotated-sorted-array/
 /*  Example:
     Input: nums = [4,5,6,7,0,1,2], target = 0
     Output: 4
  */
-package Binary_Search;
 
 public class Search_inRotated_Array {
     public static void main(String[] args) {

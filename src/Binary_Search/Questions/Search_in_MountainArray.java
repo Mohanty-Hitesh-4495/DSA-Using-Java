@@ -1,4 +1,4 @@
-package Binary_Search;
+package Binary_Search.Questions;
 /**
  * // This is MountainArray's API interface.
  * // You should not implement it, or speculate about its implementation

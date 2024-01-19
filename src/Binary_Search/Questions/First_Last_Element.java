@@ -1,4 +1,4 @@
-package Binary_Search;
+package Binary_Search.Questions;
 import java.util.Arrays;
 //  34. Find First and Last Position of Element in Sorted Basic_Fundamentals.Array
 //  URL=https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/

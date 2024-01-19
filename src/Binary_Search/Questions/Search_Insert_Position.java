@@ -1,4 +1,4 @@
-package Binary_Search;
+package Binary_Search.Questions;
 
 // 35. Search Insert Position
 // URL=https://leetcode.com/problems/search-insert-position/
