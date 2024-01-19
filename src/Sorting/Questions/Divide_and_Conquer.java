@@ -1,4 +1,4 @@
-package Sorting;
+package Sorting.Questions;
 
 // 4. Median of Two Sorted Arrays
 // URL=https://leetcode.com/problems/median-of-two-sorted-arrays/
