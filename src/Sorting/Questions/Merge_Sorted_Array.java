@@ -1,4 +1,4 @@
-package Sorting;
+package Sorting.Questions;
 import java.util.Arrays;
 
 // 88. Merge Sorted Array
