@@ -1,4 +1,4 @@
-package Sorting;
+package Sorting.Questions;
 
 // 645. Set Mismatch
 // URL=https://leetcode.com/problems/set-mismatch/
