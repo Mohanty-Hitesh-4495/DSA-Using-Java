@@ -1,4 +1,4 @@
-package Sorting;
+package Sorting.Questions;
 
 // 41. First Missing Positive
 // URL=https://leetcode.com/problems/first-missing-positive/
