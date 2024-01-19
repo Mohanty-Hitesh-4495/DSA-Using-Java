@@ -1,4 +1,4 @@
-package Binary_Search;
+package Binary_Search.Questions;
 //  162. Find Peak Element
 //  URL=https://leetcode.com/problems/find-peak-element/
 //  852. Peak Index in a Mountain Basic_Fundamentals.Array

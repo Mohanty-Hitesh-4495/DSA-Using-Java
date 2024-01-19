@@ -1,4 +1,4 @@
-package Binary_Search;
+package Binary_Search.Questions;
 import java.util.Scanner;
 
 // 69. Sqrt(x)
