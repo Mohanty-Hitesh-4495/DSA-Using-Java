@@ -7,7 +7,7 @@ package Binary_Search.Questions;
     Output: 4
  */
 
-public class Search_inRotated_Array {
+public class Search_inRotated_Array1 {
     public static void main(String[] args) {
 
     }

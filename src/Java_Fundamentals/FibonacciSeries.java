@@ -1,4 +1,4 @@
-package Basic_Fundamentals;
+package Java_Fundamentals;
 
 import java.util.*;
 public class FibonacciSeries {

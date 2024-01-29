@@ -1,4 +1,4 @@
-package Basic_Fundamentals;
+package Java_Fundamentals;
 
 // 9. Palindrome Number
 // URL=https://leetcode.com/problems/palindrome-number/

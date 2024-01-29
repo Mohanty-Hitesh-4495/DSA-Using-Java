@@ -1,4 +1,4 @@
-package Basic_Fundamentals;
+package Java_Fundamentals;
 
 public class ArmstrongSeries {
     public static void main(String[] args) {
