@@ -1,4 +1,4 @@
-package Array;
+package Matrix;
 //  1886. Determine Whether Matrix Can Be Obtained By Rotation
 //  https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/
 /*  Example 3:

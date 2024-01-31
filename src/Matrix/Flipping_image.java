@@ -1,4 +1,4 @@
-package Array;
+package Matrix;
 import java.util.Arrays;
 //  832. Flipping an Image
 //  URL=https://leetcode.com/problems/flipping-an-image/
@@ -16,13 +16,13 @@ public class Flipping_image {
                 {1,0,0}
         };
         System.out.println("INPUT");
-        for (int i=0;i<image.length;i++){
-            System.out.println(Arrays.toString(image[i]));
+        for (int[] ints : image) {
+            System.out.println(Arrays.toString(ints));
         }
         int[][] ans = flipAndInvertImage(image);
         System.out.println("OUTPUT");
-        for (int i=0;i<ans.length;i++){
-            System.out.println(Arrays.toString(ans[i]));
+        for (int[] an : ans) {
+            System.out.println(Arrays.toString(an));
         }
     }
     public static int[][] flipAndInvertImage(int[][] image) {

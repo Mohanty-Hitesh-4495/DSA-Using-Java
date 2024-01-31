@@ -1,4 +1,4 @@
-package Array;
+package Matrix;
 import java.util.Arrays;
 //  867. Transpose Matrix
 //  URL=https://leetcode.com/problems/transpose-matrix/
