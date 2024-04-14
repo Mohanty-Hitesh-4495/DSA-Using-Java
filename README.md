@@ -49,7 +49,7 @@ In this repository, you'll find solutions to various DSA problems implemented in
 
 ## Support
 
-For any questions or concerns, feel free to open an issue or contact [your-email@example.com](mailto:mohantyhitesh4495@gmail.com).
+For any questions or concerns, feel free to open an issue or contact [Mohanty Hitesh](mailto:mohantyhitesh4495@gmail.com).
 
 Happy Coding! 🚀
 
