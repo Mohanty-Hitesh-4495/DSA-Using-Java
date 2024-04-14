@@ -1,4 +1,4 @@
-# DSA-Using-Java-LeetCode Repository
+# DSA-Using-Java Repository
 
 This repository is dedicated to solving and practicing Data Structures and Algorithms (DSA) questions using Java, with a focus on problem-solving on platforms like LeetCode.
 
@@ -15,11 +15,11 @@ In this repository, you'll find solutions to various DSA problems implemented in
 
 1. **Clone the Repository**: Clone this repository to your local machine using the following command:
    ```bash
-    git clone https://github.com/Mohanty-Hitesh-4495/DSA-Using-Java-LeetCode.git
+    git clone https://github.com/Mohanty-Hitesh-4495/DSA-Using-Java.git
    
 2. **Navigate to Directory**: Move into the cloned directory:
    ```bash
-   cd DSA-Using-Java-LeetCode
+   cd DSA-Using-Java
 
 3. **Explore Solutions**: Inside the `src` directory, you'll find Java files containing solutions to various DSA problems. Each file is named descriptively according to the problem it solves.
 
