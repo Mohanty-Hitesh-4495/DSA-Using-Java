@@ -2,7 +2,7 @@ package Basic_Maths;
 import java.util.Scanner;
 
 /*
-https://www.geeksforgeeks.org/problems/lcm-and-gcd4516/1
+   https://www.geeksforgeeks.org/problems/lcm-and-gcd4516/1
 Given two integers a and b, write a function lcmAndGcd() to compute their LCM and GCD.
 The function takes two integers a and b as input and returns a list containing their LCM and GCD.
     Input: a = 5 , b = 10
@@ -10,7 +10,7 @@ The function takes two integers a and b as input and returns a list containing t
     Explanation: LCM of 5 and 10 is 10, while thier GCD is 5.
  */
 
-class Solution {
+public class GCD_LCM {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

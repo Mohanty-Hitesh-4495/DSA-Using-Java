@@ -1,5 +1,4 @@
 package Java_Fundamentals;
-
 import java.util.Scanner;
 
 public class CheckArmstrong {
