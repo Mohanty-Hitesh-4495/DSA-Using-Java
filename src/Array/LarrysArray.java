@@ -1,3 +1,5 @@
+package Array;
+
 import java.util.*;
 
 // https://www.hackerrank.com/challenges/larrys-array/problem
@@ -13,7 +15,7 @@ import java.util.*;
         [1,2,3,4,5,6]
          Output=YES
  */
-public class Main {
+public class LarrysArray {
     public static void main(String[] args) {
         List<Integer> arr = new ArrayList<>();
         arr.add(1);
