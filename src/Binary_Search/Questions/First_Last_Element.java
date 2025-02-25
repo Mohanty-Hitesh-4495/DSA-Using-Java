@@ -1,7 +1,9 @@
 package Binary_Search.Questions;
 import java.util.Arrays;
+
 //  34. Find First and Last Position of Element in Sorted Basic_Fundamentals.Array
 //  URL=https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+
 public class First_Last_Element {
     public static void main(String[] args) {
         int[] arr = {1,1,2,2,3,3,3,3,4,5,6,6,7,7,7,7,8,9};
