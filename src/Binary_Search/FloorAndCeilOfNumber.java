@@ -16,9 +16,9 @@ public class FloorAndCeilOfNumber {
             int mid = low + (high - low) / 2;
             if (a[mid] >= x) {
                 ans = a[mid];
-                high = mid - 1;   // look for larger index on the right
+                high = mid - 1;   // look for smaller index on the left
             } else {
-                low = mid + 1;  // look on the left
+                low = mid + 1;  // look on the right
             }
         }
         return ans;

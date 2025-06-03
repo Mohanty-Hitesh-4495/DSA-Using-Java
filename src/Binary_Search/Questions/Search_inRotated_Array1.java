@@ -9,91 +9,34 @@ package Binary_Search.Questions;
 
 public class Search_inRotated_Array1 {
     public static void main(String[] args) {
-
+        int[] arr = {10,11,12,13,1,2,3,4,5,6,7,8,9};
+        int target = 9;
+        System.out.println(search(arr, target));
     }
 
-//  return the index of target element...
-    public int search(int[] nums, int target) {
-//      int pivot = findPivot(nums);//calling findPivot() method
-        int pivot = findPivotWithDuplicates(nums);
-        if (pivot == -1) {//if pivot element is not found
-            return binarySearch(nums, target, 0, nums.length - 1);//then use normal binary search...
-        }
-        if (nums[pivot] == target) {//if pivot element is equals to target value then
-            return pivot;// return pivot index as answer...
-        }
-        if (target >= nums[0]) {// if target value is greater than first element
-            return binarySearch(nums, target, 0, pivot - 1);//search range will be (0 - pivot-1)
-        }
-        return binarySearch(nums, target, pivot + 1, nums.length - 1);//else search space becomes (pivot+1 - end)
-    }
-
-//  return index of target element to search method...using basic binary search code...
-    public int binarySearch(int[] arr, int target, int start, int end) {
-        while (start <= end) {
-            int mid = start + (end - start) / 2;
-            if (target < arr[mid]) {
-                end = mid - 1;
-            } else if (target > arr[mid]) {
-                start = mid + 1;
-            } else {
+    private static int search(int[] nums, int target) {
+        int low = 0;
+        int high = nums.length-1;
+        while( low <= high){
+            int mid = low+(high-low)/2;
+            if(nums[mid] == target){
                 return mid;
             }
-        }
-        return -1;
-    }
-
-//  findPivot method will search for index of pivot element and return it to search method...
-//  this will not work on duplicate elements...
-    public int findPivot(int[] arr) {
-        int start = 0;
-        int end = arr.length - 1;
-        while (start <= end) {
-            int mid = start + (end - start) / 2;
-            // 4 cases over here
-            if (mid < end && arr[mid] > arr[mid + 1]) {
-                return mid;
+            // if left half is sorted
+            if (nums[mid] >= nums[low]){
+                // Check if the target is in the left half
+                if(nums[low] <= target && nums[mid] >= target)
+                    high = mid-1;
+                else
+                    low = mid+1;
             }
-            if (mid > start && arr[mid] < arr[mid - 1]) {
-                return mid - 1;
-            }
-            if (arr[mid] <= arr[start]) {
-                end = mid - 1;
-            } else {
-                start = mid + 1;
-            }
-        }
-        return -1;
-    }
-
-    //  this method will return pivot element even if there are duplicate elements are present idn array...
-    public int findPivotWithDuplicates(int[] arr) {
-        int start = 0;
-        int end = arr.length - 1;
-        while (start <= end) {
-            int mid = start + (end - start) / 2;
-            // 4 cases over here
-            if (mid < end && arr[mid] > arr[mid + 1]) {
-                return mid;
-            }
-            if (mid > start && arr[mid] < arr[mid - 1]) {
-                return mid - 1;
-            }
-            // if elements at middle, start, end are equal
-            // then just skip the duplicates
-            if (arr[start] == arr[mid] && arr[mid] == arr[end]) {
-                if (start < end && arr[start] > arr[start]) {
-                    return start;
-                }
-                start++;
-                if (end > start && arr[end] < arr[end - 1]) {
-                    return end - 1;
-                }
-                end--;
-            } else if (arr[start] < arr[mid] || arr[start] == arr[mid] && arr[mid] > arr[end]) {
-                start = mid + 1;
-            } else {
-                end = mid - 1;
+            // if right half is sorted
+            else{
+                // Check if the target is in the right half
+                if(nums[high] >= target && nums[mid] <= target)
+                    low = mid+1;
+                else
+                    high = mid-1;
             }
         }
         return -1;
