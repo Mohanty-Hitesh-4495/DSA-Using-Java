@@ -10,10 +10,12 @@ package Binary_Search.Questions;
 public class Peak_of_MountainArray {
     public static void main(String[] args) {
         int[] arr = {0,10,15,20,25,13,10,5,2};
-        int peak = peakIndexInMountainArray(arr);
-        System.out.println(peak);
+        int peak1 = peakIndexInMountainArray(arr);
+        int peak2 = peakIndexInMountainArray2(arr);
+        System.out.println(peak1);
+        System.out.println(peak2);
     }
-//return the index of peak element of a mountain array...
+    // return the index of peak element of a mountain array...
     public static int peakIndexInMountainArray(int[] arr) {
         int start = 0;
         int end = arr.length-1;
@@ -29,5 +31,20 @@ public class Peak_of_MountainArray {
             }
         }
         return start;
+    }
+
+    private static int peakIndexInMountainArray2(int[] nums) {
+        int n = nums.length;
+        if (n==1) return 0;
+        if (nums[0] > nums[1]) return 0;
+        if (nums[n-1] > nums[n-2]) return n-1;
+        int low = 1, high = n-2;
+        while(low<=high){
+            int mid = low + (high-low) / 2;
+            if (nums[mid]>nums[mid-1] && nums[mid]>nums[mid+1]) return mid;
+            else if (nums[mid]>nums[mid-1] && nums[mid]<nums[mid+1]) low = mid+1;
+            else high = mid-1;
+        }
+        return -1;
     }
 }
