@@ -36,5 +36,4 @@ public class SquareRoot {
         }
         return Math.round(end);
     }
-
 }
