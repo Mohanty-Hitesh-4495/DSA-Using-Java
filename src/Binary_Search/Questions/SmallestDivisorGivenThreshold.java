@@ -1,5 +1,8 @@
 package Binary_Search.Questions;
-
+/*
+    1283. Find the Smallest Divisor Given a Threshold
+    https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/description/
+ */
 public class SmallestDivisorGivenThreshold {
 
     public static void main(String[] args) {
